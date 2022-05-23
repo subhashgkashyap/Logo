@@ -1,0 +1,40 @@
+.container {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at 40% 100%, #d4ca52 5%, #e0493f 45%, #cc0f90 65%, blue 100%);
+    border-radius: 20%;
+    display: grid;
+    place-items: center;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border: 12px solid white;
+    border-radius: 30%;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.box::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    border: 10px solid white;
+    border-radius: 50%;
+    position: absolute;
+    background: transparent;
+}
+
+.box::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
